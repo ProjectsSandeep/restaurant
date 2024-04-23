@@ -17,8 +17,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -44,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework_simplejwt",
-    "django-s3-storage",
+    "django_s3_storage",
 ]
 
 MIDDLEWARE = [
@@ -110,10 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
-
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
@@ -123,22 +117,17 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
-
 STATIC_URL = "/static/"
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-AWS_S3_BUCKET = "21198951"
+AWS_S3_BUCKET = "sandeep-bucket-s3"
 
-if not DEBUG:
+if DEBUG:
     STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
 AWS_S3_BUCKET_NAME_STATIC = AWS_S3_BUCKET
 
-# These next two lines will serve the static files directly
-# from the s3 bucket
 AWS_S3_CUSTOM_DOMAIN = "%s.s3.amazonaws.com" % AWS_S3_BUCKET
 
 if DEBUG:
@@ -146,9 +135,5 @@ if DEBUG:
 else:
     STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 
-# OR...if you create a fancy custom domain for your static files use:
-# AWS_S3_PUBLIC_URL_STATIC = "https://static.zappaguide.com/"
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
