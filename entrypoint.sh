@@ -10,7 +10,7 @@ python3 manage.py loaddata menu_items.json
 python3 manage.py loaddata testimonials.json
 
 # Collect static files
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 
 # Run the specified command (if any)
 exec "$@"
