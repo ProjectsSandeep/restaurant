@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 
-STATIC_ROOT = "/var/www/http://3.249.39.39/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 # Default primary key field type
