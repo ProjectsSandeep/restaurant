@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 
-STATIC_ROOT = "/var/www/3.249.39.39/static/"
+STATIC_ROOT = "/var/www/http://3.249.39.39/static/"
 
 
 # Default primary key field type
