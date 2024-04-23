@@ -1,0 +1,189 @@
+[
+{
+    "model": "orders.menuitem",
+    "pk": 1,
+    "fields": {
+        "name": "Margherita Pizza",
+        "description": "Classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
+        "price": 12.99,
+        "image": "https://example.com/margherita-pizza.jpg",
+        "menu": 1
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 2,
+    "fields": {
+        "name": "Spaghetti Carbonara",
+        "description": "Pasta dish made with eggs, cheese, pancetta, and black pepper.",
+        "price": 14.99,
+        "image": "https://example.com/spaghetti-carbonara.jpg",
+        "menu": 1
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 3,
+    "fields": {
+        "name": "Caesar Salad",
+        "description": "Fresh romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+        "price": 9.99,
+        "image": "https://example.com/caesar-salad.jpg",
+        "menu": 2
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 4,
+    "fields": {
+        "name": "Chicken Alfredo",
+        "description": "Creamy Alfredo sauce tossed with fettuccine pasta and grilled chicken.",
+        "price": 16.99,
+        "image": "https://example.com/chicken-alfredo.jpg",
+        "menu": 1
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 5,
+    "fields": {
+        "name": "Tiramisu",
+        "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+        "price": 7.99,
+        "image": "https://example.com/tiramisu.jpg",
+        "menu": 4
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 6,
+    "fields": {
+        "name": "Bruschetta",
+        "description": "Toasted bread topped with diced tomatoes, garlic, basil, and olive oil.",
+        "price": 8.99,
+        "image": "https://example.com/bruschetta.jpg",
+        "menu": 1
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 7,
+    "fields": {
+        "name": "Caprese Salad",
+        "description": "Fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
+        "price": 10.99,
+        "image": "https://example.com/caprese-salad.jpg",
+        "menu": 2
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 8,
+    "fields": {
+        "name": "Garlic Bread",
+        "description": "Sliced bread brushed with garlic butter and toasted to perfection.",
+        "price": 6.99,
+        "image": "https://example.com/garlic-bread.jpg",
+        "menu": 4
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 9,
+    "fields": {
+        "name": "Greek Salad",
+        "description": "Crisp lettuce, tomatoes, cucumbers, olives, feta cheese, and Greek dressing.",
+        "price": 11.99,
+        "image": "https://example.com/greek-salad.jpg",
+        "menu": 2
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 10,
+    "fields": {
+        "name": "Spinach Salad",
+        "description": "Fresh spinach leaves with bacon, hard-boiled eggs, and honey mustard dressing.",
+        "price": 9.99,
+        "image": "https://example.com/spinach-salad.jpg",
+        "menu": 2
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 11,
+    "fields": {
+        "name": "Seafood Risotto",
+        "description": "Creamy risotto with assorted seafood and a touch of saffron.",
+        "price": 19.99,
+        "image": "https://example.com/seafood-risotto.jpg",
+        "menu": 3
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 12,
+    "fields": {
+        "name": "Vegetarian Lasagna",
+        "description": "Layers of pasta, marinara sauce, assorted vegetables, and melted cheese.",
+        "price": 15.99,
+        "image": "https://example.com/vegetarian-lasagna.jpg",
+        "menu": 3
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 13,
+    "fields": {
+        "name": "T-Bone Steak",
+        "description": "Juicy T-bone steak grilled to perfection and served with roasted vegetables.",
+        "price": 24.99,
+        "image": "https://example.com/t-bone-steak.jpg",
+        "menu": 3
+    }
+},
+{
+    "model": "orders.menuitem",
+    "pk": 14,
+    "fields": {
+      "name": "Chocolate Brownie",
+      "description": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
+      "price": 7.99,
+      "image": "https://example.com/chocolate-brownie.jpg",
+      "menu": 4
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 15,
+    "fields": {
+      "name": "New York Cheesecake",
+      "description": "Classic New York-style cheesecake topped with fresh berries.",
+      "price": 8.99,
+      "image": "https://example.com/cheesecake.jpg",
+      "menu": 4
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 16,
+    "fields": {
+      "name": "Tiramisu",
+      "description": "Traditional Italian tiramisu made with layers of espresso-soaked ladyfingers and mascarpone cheese.",
+      "price": 9.99,
+      "image": "https://example.com/tiramisu.jpg",
+      "menu": 4
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 17,
+    "fields": {
+      "name": "Fruit Sorbet",
+      "description": "Refreshing assortment of seasonal fruit sorbets.",
+      "price": 6.99,
+      "image": "https://example.com/fruit-sorbet.jpg",
+      "menu": 4
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+{
+    "model": "orders.testimonial",
+    "pk": 1,
+    "fields": {
+        "author": "Saul Goodman",
+        "role": "Regular Customer",
+        "text": "I have been dining at this restaurant for years, and I must say, every experience has been exceptional. The food is always delicious, the service is top-notch, and the ambiance is perfect for any occasion. I highly recommend it to anyone looking for a fantastic dining experience!"
+    }
+},
+{
+    "model": "orders.testimonial",
+    "pk": 2,
+    "fields": {
+        "author": "Sara Wilsson",
+        "role": "Food Critic",
+        "text": "As a food critic, I have had the pleasure of dining at many restaurants, but this one stands out from the rest. The attention to detail in every dish is evident, and the flavors are simply exquisite. From the appetizers to the desserts, each course is a culinary masterpiece. I cannot praise this restaurant enough!"
+    }
+},
+{
+    "model": "orders.testimonial",
+    "pk": 3,
+    "fields": {
+        "author": "Jena Karlis",
+        "role": "Event Organizer",
+        "text": "I recently hosted an event at this restaurant, and I must say, it was a resounding success. The staff went above and beyond to accommodate all of our needs, and the food was absolutely divine. The guests were raving about the delicious cuisine and elegant ambiance. I cannot thank the team enough for making our event truly unforgettable!"
+    }
+},
+{
+    "model": "orders.testimonial",
+    "pk": 4,
+    "fields": {
+        "author": "Matt Brandon",
+        "role": "Food Blogger",
+        "text": "As a food blogger, I am always on the lookout for hidden gems in the culinary world, and I am thrilled to say that I have found one at this restaurant. The menu is thoughtfully curated with a diverse selection of dishes to suit every palate. The ingredients are fresh, the presentation is impeccable, and the flavors are phenomenal. This restaurant has quickly become one of my favorites!"
+    }
+},
+{
+    "model": "orders.testimonial",
+    "pk": 5,
+    "fields": {
+        "author": "John Larson",
+        "role": "Chef",
+        "text": "Having worked in the culinary industry for many years, I have developed a discerning palate, and I can confidently say that the food at this restaurant is outstanding. The chef's creativity and passion for cooking shine through in every dish, and the attention to detail is truly impressive. Whether you're craving classic comfort food or innovative culinary creations, this restaurant has something for everyone."
+    }
+},
+{
+    "model": "orders.testimonial",
+    "pk": 6,
+    "fields": {
+        "author": "Alice Johnson",
+        "role": "Food Enthusiast",
+        "text": "I am a self-proclaimed food enthusiast, and I am always eager to discover new restaurants that offer exceptional cuisine. From the moment I stepped into this restaurant, I knew I was in for a treat. The atmosphere is inviting, the service is warm and friendly, and the food is absolutely delicious. Each dish is a work of art, crafted with care and precision. I cannot wait to return and explore more of the menu!"
+    }
+}
+]

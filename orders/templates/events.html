@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Events {% endblock %} 
+
+{% block content %}
+
+<!-- ======= Events Section ======= -->
+<section id="events" class="events">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Events</h2>
+        <p>Plan Your Special Occasions with Us</p>
+      </div>
+  
+      <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="row event-item">
+              <div class="col-lg-6">
+                <img src="{% static 'orders/assets/img/event-birthday.jpg' %}" class="img-fluid" alt="Birthday Party">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Birthday Parties</h3>
+                <div class="price">
+                  <p><span>$189</span></p>
+                </div>
+                <p class="fst-italic">
+                  Celebrate your special day with us! Our birthday party packages are tailored to make your day memorable.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circled"></i> Customizable party themes and decorations.</li>
+                  <li><i class="bi bi-check-circled"></i> Delicious catering options for all ages.</li>
+                  <li><i class="bi bi-check-circled"></i> Exciting entertainment and activities.</li>
+                </ul>
+                <p>
+                  Let us take care of everything while you enjoy your day with friends and family.
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+  
+          <div class="swiper-slide">
+            <div class="row event-item">
+              <div class="col-lg-6">
+                <img src="{% static 'orders/assets/img/event-private.jpg' %}" class="img-fluid" alt="Private Party">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Private Parties</h3>
+                <div class="price">
+                  <p><span>$290</span></p>
+                </div>
+                <p class="fst-italic">
+                  Host your exclusive event with us! Our private party venues are perfect for any occasion.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circled"></i> Elegant and spacious event spaces.</li>
+                  <li><i class="bi bi-check-circled"></i> Personalized event planning and coordination.</li>
+                  <li><i class="bi bi-check-circled"></i> Gourmet catering menus tailored to your preferences.</li>
+                </ul>
+                <p>
+                  Create unforgettable memories with your guests in a sophisticated setting.
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+  
+          <div class="swiper-slide">
+            <div class="row event-item">
+              <div class="col-lg-6">
+                <img src="{% static 'orders/assets/img/event-custom.jpg' %}" class="img-fluid" alt="Custom Party">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Custom Parties</h3>
+                <div class="price">
+                  <p><span>$99</span></p>
+                </div>
+                <p class="fst-italic">
+                  Create your dream event with us! Our customizable party packages cater to your unique preferences.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circled"></i> Flexible event planning options to suit your needs.</li>
+                  <li><i class="bi bi-check-circled"></i> Bespoke menu selections crafted by our culinary team.</li>
+                  <li><i class="bi bi-check-circled"></i> Personalized decor and themes for a one-of-a-kind experience.</li>
+                </ul>
+                <p>
+                  Let us bring your vision to life and make your event truly unforgettable.
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+  </section><!-- End Events Section -->
+
+  {% endblock %}

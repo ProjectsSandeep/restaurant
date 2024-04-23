@@ -1,0 +1,30 @@
+[
+{
+    "model": "orders.menu",
+    "pk": 1,
+    "fields": {
+        "title": "Starters"
+    }
+},
+{
+    "model": "orders.menu",
+    "pk": 2,
+    "fields": {
+        "title": "Salads"
+    }
+},
+{
+    "model": "orders.menu",
+    "pk": 3,
+    "fields": {
+        "title": "Specialty"
+    }
+},
+{
+    "model": "orders.menu",
+    "pk": 4,
+    "fields": {
+        "title": "Dessert"
+    }
+}
+]

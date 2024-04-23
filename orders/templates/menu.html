@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Menu {% endblock %} 
+
+{% block content %}
+
+<!-- ======= Menu Section ======= -->
+<section id="menu" class="menu section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Menu</h2>
+        <p>Check Our Tasty Menu</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-starters">Starters</li>
+            <li data-filter=".filter-salads">Salads</li>
+            <li data-filter=".filter-specialty">Specialty</li>
+            <li data-filter=".filter-dessert">Dessert</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          {% for menu in menus %}
+          {% for menu_item in menu.menuitem_set.all %}
+          <div class="col-lg-6 menu-item filter-{{ menu }}">
+              <img src="{% static 'orders/assets/img/menu/lobster-bisque.jpg' %}" class="menu-img" alt="">
+              <div class="menu-content">
+              <a href="#">{{ menu_item }}</a><span>${{ menu_item.price }}</span>
+              </div>
+              <div class="menu-ingredients">
+              {{ menu_item.description }}
+              </div>
+          </div>
+          {% endfor %}
+          {% endfor %}
+      </div>
+
+    </div>
+  </section><!-- End Menu Section -->
+
+  <!-- ======= Specials Section ======= -->
+  <section id="specials" class="specials">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Specials</h2>
+        <p>Check Our Specials</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Decadent Desserts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Sweet Delights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Indulgent Treats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Dessert Bliss</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Chocolate Brownie Heaven</h3>
+                    <p class="fst-italic">Indulge in our heavenly chocolate brownie served with a scoop of creamy vanilla ice cream.</p>
+                    <p>Satisfy your sweet cravings with our decadent chocolate brownie. Made with the finest ingredients and served fresh, it's a delightful treat for chocolate lovers.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'orders/assets/img/specials-1.png' %}" alt="Chocolate Brownie" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Divine Cheesecake Delight</h3>
+                    <p class="fst-italic">Savor the rich flavors of our New York-style cheesecake topped with fresh berries.</p>
+                    <p>Experience pure bliss with our New York cheesecake. Creamy, smooth, and utterly delicious, it's the perfect ending to any meal.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'orders/assets/img/specials-2.png' %}" alt="Cheesecake" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Indulgent Tiramisu Temptation</h3>
+                    <p class="fst-italic">Treat yourself to our classic Italian tiramisu, layered with espresso-soaked ladyfingers and creamy mascarpone.</p>
+                    <p>Experience the true taste of Italy with our authentic tiramisu. Each bite is a symphony of flavors, blending rich espresso with delicate mascarpone cheese.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'orders/assets/img/specials-3.png' %}" alt="Tiramisu" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Blissful Sorbet Sensation</h3>
+                    <p class="fst-italic">Refresh your palate with our delightful assortment of seasonal fruit sorbets.</p>
+                    <p>Escape to paradise with our fruit sorbet. Made from the freshest seasonal fruits, it's a burst of flavor in every spoonful.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'orders/assets/img/specials-4.png' %}" alt="Fruit Sorbet" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    </div>
+  </section><!-- End Specials Section -->
+
+  {% endblock %}

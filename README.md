@@ -1,0 +1,1 @@
+<a href="{% url 'place_order' %}" class="book-a-table-btn scrollto d-none d-lg-flex">Place an order</a>
