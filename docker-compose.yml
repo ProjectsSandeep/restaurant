@@ -19,6 +19,8 @@ services:
       EMAIL_HOST_USER: rahulpoppad.1999@gmail.com
       EMAIL_USE_TLS: 1
       EMAIL_PORT: 587
+      AWS_ACCESS_KEY_ID: 'ASIATUYJP7SUL7QXC62E'
+      AWS_SECRET_ACCESS_KEY: 'nQA3xSno4uXCEE25yKM55e+KxuBRQU3SsUMirX7x'
       DEBUG: 1
 
     networks:
